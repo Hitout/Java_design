@@ -2,7 +2,7 @@ package com.design.single;
 
 /**
  * 懒汉式
- * 线程不安全
+ * 线程不安全，双检锁改进后线程安全
  *
  * @author gxyan
  */
@@ -15,9 +15,13 @@ public class LazySingle {
     }
 
     public static LazySingle instance() {
+        // 双重检查
         if (ins == null) {
-            //实例化
-            ins = new LazySingle();
+            synchronized (LazySingle.class) {
+                if (ins == null) {
+                    ins = new LazySingle();
+                }
+            }
         }
         return ins;
     }
