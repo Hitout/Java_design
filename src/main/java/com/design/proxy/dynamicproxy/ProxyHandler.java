@@ -5,7 +5,7 @@ import java.lang.reflect.Proxy;
 /**
  * 动态处理器
  * 不需要实现接口
- * 利用JDK的API,动态的在内存中构建代理对象
+ * 利用JDK的API，动态的在内存中构建代理对象
  * @author gxyan
  * @Date: 2018/8/12 17:49
  */

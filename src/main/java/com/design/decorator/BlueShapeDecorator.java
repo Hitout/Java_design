@@ -13,10 +13,10 @@ public class BlueShapeDecorator extends ShapeDecorator {
     @Override
     public void draw() {
         super.draw();
-        setRedFill();
+        setBlueFill();
     }
 
-    private void setRedFill() {
+    private void setBlueFill() {
         System.out.println("Shape color: Blue");
     }
 }
