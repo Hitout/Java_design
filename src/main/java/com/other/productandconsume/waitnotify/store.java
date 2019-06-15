@@ -6,7 +6,7 @@ import java.util.LinkedList;
  * @author gxyan
  * @date 2018/10/16 19:06
  */
-public class Store {
+class Store {
 
     private final int MAX_PRODUCT = 5;
     private final int MIN_PRODUCT = 0;
