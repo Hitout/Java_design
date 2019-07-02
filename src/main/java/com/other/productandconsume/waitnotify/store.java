@@ -11,14 +11,14 @@ class Store {
     private final int MAX_PRODUCT = 5;
     private final int MIN_PRODUCT = 0;
 
-    private LinkedList<Object> product = new LinkedList<>();
+    private final LinkedList<Object> product = new LinkedList<>();
 
     /** 生产者 */
     public void produce(String producer)
     {
         synchronized (product) {
             while (this.product.size() >= MAX_PRODUCT) {
-                System.out.println("产品已满，【"+ producer +"】暂时不能执行生产任务!,请稍候再生产");
+                System.out.println("产品已满，【"+ producer +"】暂时不能执行生产任务！请稍候再生产");
                 try {
                     product.wait();
                 } catch(InterruptedException e) {
