@@ -1,7 +1,7 @@
 package com.design.factory.abstractfactory.superfactory;
 
+import com.design.factory.Shape;
 import com.design.factory.abstractfactory.color.Color;
-import com.design.factory.abstractfactory.shape.Shape;
 
 /**
  * 抽象工厂

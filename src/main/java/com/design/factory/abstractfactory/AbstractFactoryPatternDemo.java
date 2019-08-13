@@ -1,14 +1,14 @@
 package com.design.factory.abstractfactory;
 
+import com.design.factory.Shape;
 import com.design.factory.abstractfactory.color.Color;
-import com.design.factory.abstractfactory.shape.Shape;
 import com.design.factory.abstractfactory.superfactory.AbstractFactory;
 
 /**
  * @author gxyan
  * @Date: 2018/8/11 13:58
  */
-public class PatternDemo {
+public class AbstractFactoryPatternDemo {
     public static void main(String[] args) {
         // 获取形状工厂
         AbstractFactory shapeFactory = FactoryProducer.getFactory("shape");

@@ -1,21 +1,17 @@
-package com.design.factory.abstractfactory.superfactory;
+package com.design.factory.simple;
 
 import com.design.factory.Circle;
 import com.design.factory.Shape;
 import com.design.factory.Square;
-import com.design.factory.abstractfactory.color.Color;
 
 /**
+ * 简单工厂(不属于23种设计模式)
+ * (违背开闭原则)
+ * 将产品的生产（实例化）放入工厂中
  * @author gxyan
- * @Date: 2018/8/11 13:53
+ * @Date: 2018/8/11 10:49
  */
-public class ShapeFactory extends AbstractFactory {
-    @Override
-    public Color getColor(String color) {
-        return null;
-    }
-
-    @Override
+public class ShapeFactory {
     public Shape getShape(String shape) {
         if(shape == null){
             return null;

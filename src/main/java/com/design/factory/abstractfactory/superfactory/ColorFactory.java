@@ -1,9 +1,9 @@
 package com.design.factory.abstractfactory.superfactory;
 
+import com.design.factory.Shape;
 import com.design.factory.abstractfactory.color.Blue;
 import com.design.factory.abstractfactory.color.Color;
 import com.design.factory.abstractfactory.color.Red;
-import com.design.factory.abstractfactory.shape.Shape;
 
 /**
  * @author gxyan

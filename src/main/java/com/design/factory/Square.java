@@ -1,8 +1,9 @@
-package com.design.factory.abstractfactory.shape;
+package com.design.factory;
 
 /**
+ * 具体产品
  * @author gxyan
- * @Date: 2018/8/11 13:46
+ * @Date: 2018/8/11 10:58
  */
 public class Square implements Shape {
     @Override
