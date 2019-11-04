@@ -13,10 +13,10 @@
 泛化=实现\>组合\>聚合\>关联\>依赖
 
 ### 设计模式六大原则
- - 开闭原则(Open Close Principle)：提高扩展性
+ - 开闭原则(Open Close Principle)：对扩展开放，对修改关闭。拓展时不能修改原有的代码
  - 里氏代换原则(Liskov Substitution Principle)：子父类互相替换
  - 依赖倒转原则(Dependence Inversion Principle)：针对接口编程，依赖抽象不依赖具体
- - 接口隔离原则(Interface Segregation Principle)：降低耦合度
+ - 接口隔离原则(Interface Segregation Principle)：降低耦合度。使用多个隔离的接口，比使用单个接口要好
  - 迪米特法则 or 最少知道原则(Demeter Principle)：功能模块尽量独立
  - 合成复用原则(Composite Reuse Principle)：尽量使用聚合，组合，而不是继承
  
