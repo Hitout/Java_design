@@ -1,5 +1,7 @@
 package com.other.productandconsume.asyntask;
 
+import com.other.productandconsume.ThreadPoolExecutorUtils;
+
 import java.util.Random;
 import java.util.concurrent.*;
 
@@ -15,7 +17,7 @@ public class QueueGenerationService {
     private static final ThreadPoolExecutor EXECUTOR = ThreadPoolExecutorUtils.newExecutor(
             "Queue-Service"
             , 1, 2, 3, TimeUnit.MINUTES,
-            new ArrayBlockingQueue<>(100)
+            new LinkedBlockingDeque<>(100)
     );
 
     public void processTask() {

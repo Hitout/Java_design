@@ -1,4 +1,4 @@
-package com.other.productandconsume.asyntask;
+package com.other.productandconsume;
 
 import java.util.concurrent.*;
 
