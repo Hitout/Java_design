@@ -7,7 +7,8 @@ package com.design.single;
  * @author gxyan
  */
 public class LazySingle {
-    private static LazySingle ins;
+    /** 使用volatile禁止重排序 */
+    private static volatile LazySingle ins;
 
     /** 私有化构造方法 */
     private LazySingle() {
