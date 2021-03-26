@@ -183,8 +183,8 @@ public class Main {
         //  2     3
         // /     / \
         // 4    5   7
-        //  \  /
-        //   6 8
+        //       \  /
+        //        6 8
         BinaryTreeNode root = new BinaryTreeNode(1);
         BinaryTreeNode node2 = new BinaryTreeNode(2);
         BinaryTreeNode node3 = new BinaryTreeNode(3);
