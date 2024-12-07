@@ -18,9 +18,9 @@ public class StrategyPatternDemo {
         System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
 
         context = new Context(new Subtract());
-        System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
+        System.out.println("10 - 5 = " + context.executeStrategy(10, 5));
 
         context = new Context(new Multiply());
-        System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
+        System.out.println("10 * 5 = " + context.executeStrategy(10, 5));
     }
 }

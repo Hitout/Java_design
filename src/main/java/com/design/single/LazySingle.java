@@ -3,6 +3,7 @@ package com.design.single;
 /**
  * 懒汉式
  * 线程不安全，双检锁改进后线程安全
+ * 例：{@link org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)}
  *
  * @author gxyan
  */
